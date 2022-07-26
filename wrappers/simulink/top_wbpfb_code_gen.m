@@ -329,7 +329,7 @@ function vhdlfile = top_wbpfb_code_gen(wb_factor, nof_wb_streams, twid_dat_w, no
     updatefftpkg(filepathscript,vhdlfilefolder,fft_in_dat_w,fft_out_dat_w,fft_stage_dat_w,twid_filepath_stem);
 
     %generate twiddlePkg for parallel twiddle factors:
-    par_twiddle_pkg_gen(nof_points, twid_dat_w, vhdlfilefolder);
+    par_twiddle_pkg_gen(wb_factor, twid_dat_w, vhdlfilefolder);
 end
 
 function chararr = mknprts(wbfctr,nof_wb_streams)

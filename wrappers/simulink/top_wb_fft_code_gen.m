@@ -245,7 +245,7 @@ function vhdlfile = top_wb_fft_code_gen(wb_factor,nof_points,twid_dat_w,vendor, 
     updatepkgs(filepathscript, vhdlfilefolder, in_dat_w, out_dat_w, stage_dat_w, coef_filepath_stem);
 
     %generate twiddlePkg for parallel twiddle factors:
-    par_twiddle_pkg_gen(nof_points, twid_dat_w, vhdlfilefolder);
+    par_twiddle_pkg_gen(wb_factor, twid_dat_w, vhdlfilefolder);
 end
 
 function chararr = mknprts(wbfctr)
